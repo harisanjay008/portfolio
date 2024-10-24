@@ -1,0 +1,69 @@
+/* src/components/Skills.css */
+
+.skills-container {
+    max-width: 1200px; /* Limit the maximum width for readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding for inner spacing */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.skills-heading {
+    text-align: center; /* Center the heading */
+    font-size: 32px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Darker text color */
+    text-transform: uppercase; /* Uppercase for style */
+}
+
+.skills-list {
+    display: grid; /* Use grid layout for two columns */
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Space between items */
+}
+
+.skill-item {
+    padding: 15px; /* Padding for individual item */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for items */
+    text-align: center; /* Center text */
+    transition: box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.skill-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.skill-icon {
+    font-size: 40px; /* Larger icon size */
+    margin-bottom: 10px; /* Space below icon */
+    color: #007bff; /* Icon color */
+}
+
+.skill-name {
+    font-size: 18px; /* Standard text size */
+    margin-bottom: 5px; /* Space below name */
+}
+
+.skill-percentage {
+    font-size: 16px; /* Percentage text size */
+    margin-bottom: 5px; /* Space below percentage */
+}
+
+.skill-bar {
+    background-color: #ddd; /* Background for the skill bar */
+    border-radius: 5px; /* Rounded corners */
+    height: 10px; /* Height of the bar */
+    width: 100%; /* Full width */
+    margin: 5px 0; /* Margin above and below */
+}
+
+.skill-progress {
+    height: 100%; /* Fill the bar */
+    background-color: #007bff; /* Blue color for progress */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Remove the media query to keep it two columns on all screens */

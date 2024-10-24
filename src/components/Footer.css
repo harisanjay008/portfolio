@@ -1,0 +1,35 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for top and bottom */
+    position: relative; /* Position relative for footer */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Padding for sides */
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-icons img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Scale icon on hover */
+}

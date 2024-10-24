@@ -1,0 +1,84 @@
+/* src/components/Projects.css */
+
+.projects-container {
+    max-width: 1200px; /* Limit the maximum width for readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding for inner spacing */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.projects-heading {
+    text-align: center; /* Center the heading */
+    font-size: 32px; /* Heading font size */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Darker text color */
+    text-transform: uppercase; /* Uppercase for style */
+}
+
+.project-list {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between items */
+}
+
+.project-item {
+    display: flex; /* Flexbox layout for image and description */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* To maintain border radius on image */
+    background-color: #f9f9f9; /* Light background for project item */
+    transition: transform 0.3s; /* Smooth transform for hover effect */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    padding: 20px; /* Padding inside project item */
+    text-align: center; /* Center text for description */
+    flex-direction: column; /* Stack image and text vertically */
+    width: 300px; /* Fixed width for each project item */
+}
+
+.project-item:hover {
+    transform: scale(1.02); /* Slightly scale on hover */
+}
+
+.project-image {
+    width: 100%; /* Full width for image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and description */
+}
+
+.project-description {
+    flex-grow: 1; /* Allow description to take remaining space */
+    text-align: center; /* Center the text */
+}
+
+.project-links {
+    margin-top: 10px; /* Space above links */
+    display: flex; /* Flexbox for links */
+    justify-content: center; /* Center links horizontally */
+}
+
+.project-link {
+    margin: 0 10px; /* Space between links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.project-link:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column; /* Stack items in a single column on smaller screens */
+        align-items: center; /* Center items */
+    }
+
+    .project-item {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Space below items */
+    }
+}

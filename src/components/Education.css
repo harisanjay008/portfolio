@@ -1,0 +1,82 @@
+/* src/components/Education.css */
+
+.education-container {
+    max-width: 1200px; /* Limit the maximum width for readability */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding for inner spacing */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap into rows */
+    justify-content: center; /* Center items */
+}
+
+h2 {
+    width: 100%; /* Full width to center the title */
+    font-size: 32px; /* Title size */
+    margin-bottom: 20px; /* Space below title */
+    color: #333; /* Darker text color */
+    text-align: center; /* Center text */
+    font-weight: bold; /* Bold text for emphasis */
+    text-transform: uppercase; /* Uppercase for style */
+    border-bottom: 2px solid #007bff; /* Bottom border for emphasis */
+    padding-bottom: 10px; /* Space below the heading */
+}
+
+.education-item {
+    flex: 1 1 calc(33.333% - 40px); /* Each item takes up one-third of the container, with spacing */
+    margin: 15px; /* Space around items */
+    padding: 20px; /* Padding for individual item */
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners for item */
+    transition: box-shadow 0.3s, transform 0.3s; /* Transition for hover effect */
+    background-color: #f9f9f9; /* Light background for items */
+    text-align: left; /* Align text to the left */
+}
+
+.education-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+h3 {
+    font-size: 24px; /* Heading size for education items */
+    margin-bottom: 5px; /* Space below heading */
+    color: #007bff; /* Blue color for headings */
+}
+
+p {
+    font-size: 18px; /* Standard text size */
+    color: #555; /* Slightly lighter color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .education-item {
+        flex: 1 1 100%; /* Each item takes full width on smaller screens */
+        margin: 10px 0; /* Reduced margin */
+    }
+    
+    h2 {
+        font-size: 28px; /* Smaller font size for smaller screens */
+    }
+    h3 {
+        font-size: 22px; /* Adjust heading size */
+    }
+    p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px; /* Further reduce font size */
+    }
+    h3 {
+        font-size: 20px; /* Further adjust heading size */
+    }
+    p {
+        font-size: 14px; /* Further adjust paragraph size */
+    }
+}
